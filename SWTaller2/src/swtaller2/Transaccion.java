@@ -1,0 +1,122 @@
+package swtaller2;
+import java.util.Calendar;
+import util.perez.*;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.A6ABE48A-B9E4-C253-B41E-75DE33630073]
+// </editor-fold> 
+public class Transaccion {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5CAA28AF-0D96-0DA4-7E2D-F5C425955B21]
+    // </editor-fold> 
+    private Calendar fecha_transaccion;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.128977F3-8CA2-59D9-2EA4-17C6EF3FC814]
+    // </editor-fold> 
+    private String descripcion;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D0195E89-5AA8-EC4C-29F3-07919940A5D2]
+    // </editor-fold> 
+    private double monto;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.168E5726-632E-0BC0-C674-0060E4CC8337]
+    // </editor-fold> 
+    private double saldo;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.1BD0ED4E-2AC9-71D3-DA8B-8021D20877E9]
+    // </editor-fold> 
+    private TipoTransaccion tipo_trans;
+ private static util utl = new util();
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.C2B147DA-3FFF-6399-D975-BFC923D28A3F]
+    // </editor-fold> 
+    public Transaccion (Calendar fecha_transaccion, String descripcion, double monto, double saldo, TipoTransaccion tipo_trans) {
+        this.fecha_transaccion = fecha_transaccion;
+        this.descripcion = descripcion;
+        this.monto = monto;
+        this.saldo = saldo;
+        this.tipo_trans = tipo_trans;    
+    }
+
+    public Transaccion() {
+    }
+    
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.A4820A66-BF44-4C63-7F8D-A3C5B9638B48]
+    // </editor-fold> 
+    public String getDescripcion () {
+        return descripcion;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E8BAA4CB-75EC-B074-3C35-8E03887C0C3C]
+    // </editor-fold> 
+    public void setDescripcion (String val) {
+        this.descripcion = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.48663B2B-DF85-EC35-8EDC-2F04304D1E76]
+    // </editor-fold> 
+    public Calendar getFecha_transaccion () {
+        return fecha_transaccion;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.8DE4BEA8-BE50-8CBC-790A-8AAE80FEB9AA]
+    // </editor-fold> 
+    public void setFecha_transaccion (Calendar val) {
+        this.fecha_transaccion = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.A4D8A7A3-1C1E-9903-E6AD-79C54E9E477B]
+    // </editor-fold> 
+    public double getMonto () {
+        return monto;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.3E6B474B-5CA8-E520-9D62-D275FE85A107]
+    // </editor-fold> 
+    public void setMonto (double val) {
+        this.monto = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.DD671B68-14F3-A0B6-8009-AF724732473F]
+    // </editor-fold> 
+    public double getSaldo () {
+        return saldo;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4B52F312-D093-E6F4-C483-335D659F3E39]
+    // </editor-fold> 
+    public void setSaldo (double val) {
+        this.saldo = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.20D846CA-3C83-1131-5E89-75B5AE9DFF19]
+    // </editor-fold> 
+    public TipoTransaccion getTipo_trans () {
+        return tipo_trans;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.8943F727-DE2D-97C3-0D9A-D9A7C98EB35D]
+    // </editor-fold> 
+    public void setTipo_trans (TipoTransaccion val) {
+        this.tipo_trans = val;
+    }
+
+}
+

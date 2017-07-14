@@ -1,0 +1,86 @@
+package swdeber5;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.F2290D4F-EEC4-3CA7-ABFB-436A5B6A0D7C]
+// </editor-fold> 
+public class Difunto extends Persona {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.DA833DAD-6412-0645-374E-B25BD293738B]
+    // </editor-fold> 
+    private Calendar fecha_afiliacion;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.2E50475A-189E-23E6-2A0A-0691B95B8156]
+    // </editor-fold> 
+    private String causa;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.A824B04A-C719-62E7-A1BB-EEF402DF5750]
+    // </editor-fold> 
+    private Estado estado;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.CA63735A-0C3F-FB7A-942F-C2421EDD50A3]
+    // </editor-fold> 
+    public Difunto () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.93F5B63B-8ECD-652E-92F4-E836FDCFDD8E]
+    // </editor-fold> 
+    public String getCausa () {
+        return causa;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.AE4B2685-6E1D-FB56-6C72-A1A731FC30C5]
+    // </editor-fold> 
+    public void setCausa (String val) {
+        this.causa = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BB1BD92F-B2A4-4184-FF95-2B566803CF42]
+    // </editor-fold> 
+    public Estado getEstado () {
+        return estado;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.13B8344C-2F05-016F-6FC3-3D7699AF28FD]
+    // </editor-fold> 
+    public void setEstado (Estado val) {
+        this.estado = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.FEE3104A-9F07-F0FB-28EA-AB9C90887B5A]
+    // </editor-fold> 
+    public Calendar getFecha_afiliacion () {
+        return fecha_afiliacion;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.A52E603D-6254-7693-9015-7D4DB92A12CB]
+    // </editor-fold> 
+    public void setFecha_afiliacion (Calendar val) {
+        this.fecha_afiliacion = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.2F172D95-F460-7E43-8365-FD331DD8C0D8]
+    // </editor-fold> 
+    public void Mostrar () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.109929B9-6B5F-734A-19E6-FFF67D93445E]
+    // </editor-fold> 
+    public int CalcularEdad () {
+        return 0;
+    }
+
+}
+

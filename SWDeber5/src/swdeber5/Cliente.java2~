@@ -1,0 +1,63 @@
+package swdeber5;
+import util.perez.*;
+import java.util.Calendar;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.96EC1D48-0D2B-4BF2-2773-C20A89B34E87]
+// </editor-fold> 
+public class Cliente extends Persona {
+private static util utl = new util();
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.EA4F6485-74F5-4026-28E4-EC76D1666FFE]
+    // </editor-fold> 
+    private int numero;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.93F1C754-424D-69DE-7CA3-996F35B03976]
+    // </editor-fold> 
+    private Calendar fecha_afiliacion;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.02733639-CA6F-55CC-C021-4EF7A4E3C997]
+    // </editor-fold> 
+    public Cliente () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.67060605-E25E-9A83-4326-F03C92BEE656]
+    // </editor-fold> 
+    public Calendar getFecha_afiliacion () {
+        return fecha_afiliacion;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.FE3CF611-9AE0-2CED-8E87-F933F7072FE4]
+    // </editor-fold> 
+    public void setFecha_afiliacion (Calendar val) {
+        this.fecha_afiliacion = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.2E620148-ED5E-C5F1-0EB8-8ACFECE330EE]
+    // </editor-fold> 
+    public int getNumero () {
+        return numero;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4941602E-8AB7-8324-34FC-E2771EC108E1]
+    // </editor-fold> 
+    public void setNumero (int val) {
+        this.numero = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E60D024D-79CE-9C99-6789-868A61A046F1]
+    // </editor-fold> 
+    public void Mostrar () {
+      utl.Println("Número: "+numero+"     Fecha afiliación: "+fecha_afiliacion);
+    }
+
+}
+

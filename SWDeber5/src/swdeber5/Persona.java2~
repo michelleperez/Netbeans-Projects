@@ -1,0 +1,90 @@
+package swdeber5;
+import util.perez.*;
+import java.util.Calendar;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.8A5E5A04-788B-22A8-B4C6-820D537E7AFA]
+// </editor-fold> 
+public class Persona {
+private static util utl = new util();
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.67B52D9B-D2D8-2BFF-7695-AA98556D99DC]
+    // </editor-fold> 
+    private String cedula;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.CA549F8B-0AEB-C891-440C-98E0BD190F63]
+    // </editor-fold> 
+    private String nombre;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.259BA63E-7F74-4175-3C70-5B77C98E3D22]
+    // </editor-fold> 
+    private Calendar fecha_nacimiento;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E933E1FA-2893-FB21-DA8C-0D13CB7591A7]
+    // </editor-fold> 
+    public Persona () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.790E6948-A63D-0914-00B3-406B48D8EEA3]
+    // </editor-fold> 
+    public String getCedula () {
+        return cedula;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.49894400-E671-D5FA-66B9-6CC4AB130353]
+    // </editor-fold> 
+    public void setCedula (String val) {
+        this.cedula = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C40C1DA9-7EFA-E76B-19E0-C8120DF39E8A]
+    // </editor-fold> 
+    public Calendar getFecha_nacimiento () {
+        return fecha_nacimiento;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.FE73EBA1-2317-3A76-8CC5-74362E6CE2FC]
+    // </editor-fold> 
+    public void setFecha_nacimiento (Calendar val) {
+        this.fecha_nacimiento = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F6DEB78E-6960-CFE7-7D54-E57BBE63CF30]
+    // </editor-fold> 
+    public String getNombre () {
+        return nombre;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.AD9EB3B0-DAD4-4808-A175-2F2B76D303BD]
+    // </editor-fold> 
+    public void setNombre (String val) {
+        this.nombre = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.3F11B35A-9B15-14A8-735D-0401DDFF212D]
+    // </editor-fold> 
+    public void Mostrar () {
+        utl.Println("Nombre: "+nombre+"\tCédula: "+cedula);
+        utl.Println("Fecha de nacimiento: "+utl.PrintDate(fecha_nacimiento, "dd/MM/yyyy"));
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.C9D73518-7CD6-9EDF-E968-F5768EEB4544]
+    // </editor-fold> 
+    public int CalcularEdad () {
+        return utl.GetYear(fecha_nacimiento);
+    }
+
+}
+

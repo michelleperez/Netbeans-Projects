@@ -1,0 +1,26 @@
+package swdeber5;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.C2DAC743-D156-CE54-BBA6-643D225283F2]
+// </editor-fold> 
+public enum Estado {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5168190B-D6CA-7A5B-7E6C-4C8E9D69883A]
+    // </editor-fold> 
+    CUERPO_ENTERO,
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E81D366F-56A5-D161-7E3F-1059FD065144]
+    // </editor-fold> 
+    RESTOS,
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.A11BFEE1-F2EB-85B9-140A-73F9FC81947C]
+    // </editor-fold> 
+    CENIZAS;
+
+
+}
+
